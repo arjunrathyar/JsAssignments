@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down</title>
+
+    <script src="/js/Q4.js"></script>
+</head>
+
+<body>
+
+    <style>
+        .options{
+            margin-left: 35%;
+        }
+    </style>
+
+    <select class="options" name="feed" id="feed" value="" onchange="showHide(this.value)" style="width:540px">
+        <option selected="selected" disabled="true">Please select</option>
+        <option value="nissan" id="nissan"> NISSAN </option>
+        <option value="toyota" id="toyota"> TOYOTA </option>
+        <option value="Other" id="Other">Other...</option>
+    </select>
+
+    <div class="form-group">
+        <label for="otherText"></label>
+        <textarea class="options" name="otherText" id="otherText" value="" style="width:533px;display:none"></textarea>
+    </div>
+
+</body>
+
+</html>
