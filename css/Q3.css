@@ -1,0 +1,14 @@
+.inpField {
+    margin-left: 35%;
+    margin-top: 15%;
+    max-width: 800px;
+}
+
+button{
+    width: 10%;
+    margin-left: 5%;
+}
+
+.field{
+    padding-left: 7px;
+}
