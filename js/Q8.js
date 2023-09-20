@@ -1,5 +1,5 @@
-class Blog {
-    constructor(name, email, title, content) {
+class Blog {                                                                       //class
+    constructor(name, email, title, content) {                                     //constructor
         this.name = name;
         this.email = email;
         this.title = title;
@@ -12,7 +12,7 @@ class Blog {
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("form");
     const posts = document.getElementById("posts");
-    $('.summernote').summernote();
+    $('.summernote').summernote();                                                //summernote
 
 
     form.addEventListener("submit", function (event) {
@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const postTitle = document.getElementById("postTitle").value;
         const postContent = $('.summernote').summernote('code'); 
 
-        const newPost = new Blog(name, email, postTitle, postContent);
+        const newPost = new Blog(name, email, postTitle, postContent);            //object of class getting initialized with values passed after clicking submit button
 
-        const listItem = document.createElement("li");
+        const listItem = document.createElement("li");                            //adding those values to list which is then displayed as an unordered list
         listItem.className = "list-group-item";
         listItem.innerHTML = `
             <p><span class="glyphicon glyphicon-user"></span> ${newPost.name} &nbsp; <span class="glyphicon glyphicon-time"></span> ${newPost.timestamp}</p>
@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <p>${newPost.content}</p>
         `;
 
-        posts.appendChild(listItem);
-        form.reset();
+        posts.appendChild(listItem);                                              //adding the list items to unordered list
+        form.reset();                                                             //reseting form and summernote
         $('.summernote').summernote('code', ''); 
     });
 });
