@@ -29,10 +29,10 @@ document.addEventListener('DOMContentLoaded', function () {
         let name = /^[a-zA-Z ]+$/;
         if (!inputtxt.match(name)) {
             nameError.textContent = 'Name should contain only alphabets!';
-            nameInput.style.border = '5px solid';
+            nameInput.style.border = '1px solid';
             nameInput.style.borderColor = 'red';
             nameError.style.color = 'red';
-            button.style.border = '5px solid red';
+            button.style.border = '1px solid red';
         }
         else {
             nameInput.style.border = '';
@@ -46,10 +46,10 @@ document.addEventListener('DOMContentLoaded', function () {
         let phoneno = /^\d{10}$/;
         if (!inputtxt.match(phoneno)) {
             phoneError.textContent = 'Please enter a valid phone number!';
-            phoneInput.style.border = '5px solid';
+            phoneInput.style.border = '1px solid';
             phoneInput.style.borderColor = 'red';
             phoneError.style.color = 'red';
-            button.style.border = '5px solid red';
+            button.style.border = '1px solid red';
         }
         else {
             phoneInput.style.border = '';
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
             button.style.border = '';
         }
     }
-
+    
 
     function emailValidator() {
         var emailVal = emailInput.value;
@@ -65,10 +65,10 @@ document.addEventListener('DOMContentLoaded', function () {
         var dotposition = emailVal.lastIndexOf(".");
         if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= emailVal.length) {
             emailError.textContent = 'Please enter a valid e-mail address!';
-            emailInput.style.border = '5px solid';
+            emailInput.style.border = '1px solid';
             emailInput.style.borderColor = 'red';
             emailError.style.color = 'red';
-            button.style.border = '5px solid red';
+            button.style.border = '1px solid red';
         }
         else {
             emailInput.style.border = '';
@@ -81,10 +81,10 @@ document.addEventListener('DOMContentLoaded', function () {
         var password = passwordInput.value;
         if (password.length < 6) {
             passwordError.textContent = "Password must be at least 6 characters long!";
-            passwordInput.style.border = '5px solid';
+            passwordInput.style.border = '1px solid';
             passwordInput.style.borderColor = 'red';
             passwordError.style.color = 'red';
-            button.style.border = '5px solid red';
+            button.style.border = '1px solid red';
         }
         else {
             passwordInput.style.border = '';
@@ -99,10 +99,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (firstpassword != secondpassword) {
             confPasswordError.textContent = 'Password must be same as the previous one!';
-            confPasswordInput.style.border = '5px solid';
+            confPasswordInput.style.border = '1px solid';
             confPasswordInput.style.borderColor = 'red';
             confPasswordError.style.color = 'red';
-            button.style.border = '5px solid red';
+            button.style.border = '1px solid red';
         }
         else {
             confPasswordInput.style.border = '';
@@ -120,10 +120,10 @@ document.addEventListener('DOMContentLoaded', function () {
         //validation - fullName
         if (!nameInput.value.trim()) {
             nameError.textContent = 'Enter full name.';
-            nameInput.style.border = '5px solid';
+            nameInput.style.border = '1px solid';
             nameInput.style.borderColor = 'red';
             nameError.style.color = 'red';
-            button.style.border = '5px solid red';
+            button.style.border = '1px solid red';
         }
         else {
             nameError.textContent = '';
@@ -133,10 +133,10 @@ document.addEventListener('DOMContentLoaded', function () {
         //validation - email
         if (!emailInput.value.trim()) {
             emailError.textContent = 'Enter your email address';
-            emailInput.style.border = '5px solid';
+            emailInput.style.border = '1px solid';
             emailInput.style.borderColor = 'red';
             emailError.style.color = 'red';
-            button.style.border = '5px solid red';
+            button.style.border = '1px solid red';
         }
         else {
             emailError.textContent = '';
@@ -147,10 +147,10 @@ document.addEventListener('DOMContentLoaded', function () {
         //validation - phone
         if (!phoneInput.value.trim()) {
             phoneError.textContent = 'Enter a phone number.';
-            phoneInput.style.border = '5px solid';
+            phoneInput.style.border = '1px solid';
             phoneInput.style.borderColor = 'red';
             phoneError.style.color = 'red';
-            button.style.border = '5px solid red';
+            button.style.border = '1px solid red';
         }
         else {
             phoneError.textContent = '';
@@ -161,10 +161,10 @@ document.addEventListener('DOMContentLoaded', function () {
         //validation - password
         if (!passwordInput.value.trim()) {
             passwordError.textContent = 'Enter password.';
-            passwordInput.style.border = '5px solid';
+            passwordInput.style.border = '1px solid';
             passwordInput.style.borderColor = 'red';
             passwordError.style.color = 'red';
-            button.style.border = '5px solid red';
+            button.style.border = '1px solid red';
         }
         else {
             passwordError.textContent = '';
@@ -175,10 +175,10 @@ document.addEventListener('DOMContentLoaded', function () {
         //validation - confirm password
         if (!confPasswordInput.value.trim()) {
             confPasswordError.textContent = 'Enter password confirmation.';
-            confPasswordInput.style.border = '5px solid';
+            confPasswordInput.style.border = '1px solid';
             confPasswordInput.style.borderColor = 'red';
             confPasswordError.style.color = 'red';
-            button.style.border = '5px solid red';
+            button.style.border = '1px solid red';
         }
         else {
             confPasswordError.textContent = '';
